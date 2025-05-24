@@ -13,11 +13,14 @@
 
 ```python
 # TODO :
-classifier = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
-classifier("I am doing this on a regular basis, baking a cake in the morning!")
+specific_model = pipeline(model="cardiffnlp/twitter-roberta-base-sentiment")
+data = "Artificial intelligence and automation are already causing friction in the workforce. Should schools revamp existing programs for topics like #AI, or are new research areas required?"
+specific_model(data)
 ```
 
 ## Result : 
 ```python
-[{'label': 'POSITIVE', 'score': 0.9959210157394409}]
+[{'label': 'LABEL_1', 'score': 0.5272253155708313}]
 ```
+Based on the result, model classifies the tweet as neutral or 1, which it actually might be, versus the general model, classifies the same tweet as 'NEGATIVE', which is probably not entirely negative
+
