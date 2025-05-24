@@ -15,6 +15,9 @@
 # TODO :
 classifier = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 classifier("I am doing this on a regular basis, baking a cake in the morning!")
+```
 
+## Result : 
+```python
 [{'label': 'POSITIVE', 'score': 0.9959210157394409}]
-
+```
