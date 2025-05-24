@@ -127,13 +127,13 @@ based on the result model can extract the text and summarize it pretty well by u
 ### 7. Example 7 - Translation
 
 ```python
-translator_id = pipeline("translation", model="Helsinki-NLP/opus-mt-id-fr")
-translator_id("Halo, siapa nama anda?")
+translator = pipeline("translation_en_to_de", model="t5-small")
+print(translator("New York is my favourite city", max_length=40))
 ```
 
 ## Result : 
 ```python
-[{'translation_text': 'Bonjour, quel est votre nom ?'}]
+[{'translation_text': 'New York ist meine Lieblingsstadt'}]
 ```
 
-based on the result, the model succeeded in translating the text from Indonesia to France
+based on the result, the model succeeded in translating the text from English to German language
