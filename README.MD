@@ -5,11 +5,7 @@
 [![Python](https://img.shields.io/badge/PYTHON-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PYTORCH-red?logo=pytorch&logoColor=white)](https://pytorch.org/)
 
----
-
 **Name : Vincent Tanjaya**
-
----
 
 ## My todo :
 
